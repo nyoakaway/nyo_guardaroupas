@@ -4,7 +4,7 @@ Sistema de guarda roupa diferenciado o qual salva as roupas compradas na loja de
 **FrameWork:** VRPEX
 
 **Requisitos:**
-[nyo_lojaderoupa](https://github.com/nyoakaway/nyo_lojaderoupas)
+[nyo_lojaderoupas](https://github.com/nyoakaway/nyo_lojaderoupas)
 
 **Instalação:** 
 * Abrir **server.cfg** adicionar **ensure nyo_guardaroupa**

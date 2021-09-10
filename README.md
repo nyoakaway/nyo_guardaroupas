@@ -1,5 +1,5 @@
 # NYO GUARDA ROUPA
-Sistema de guarda roupa diferenciado o qual salva as roupas compradas na loja de roupa e possibilida a troca sem custo (e não apenas o padrão que salva outfit montados)
+Sistema de guarda roupa diferenciado o qual salva as roupas compradas na loja de roupa e possibilida a troca sem custo (e não apenas o padrão que salva outfit montados), script lançado a quase 2 anos atras!
 
 **FrameWork:** VRPEX
 

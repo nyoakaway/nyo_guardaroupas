@@ -1,0 +1,362 @@
+body {
+    overflow: hidden;
+    font-family: Poppins, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+    user-select: none;
+    outline: none;
+}
+
+.container {
+    position: absolute;
+    left: 1%;
+    top: 15%;
+    width: 600px;
+    height: 700px;
+    display: inline-flex;
+    transform: translate(-50%, -50%);
+    transform: perspective(600px) rotateY(5deg);
+}
+
+.bottom {
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    bottom: 0;
+    left: 0;
+    display: inline-flex;
+}
+
+.bottom .color {
+    padding: 5px;
+    width: 115px;
+    height: 40px;
+    color: #fff;
+    font-size: 20px;
+    white-space: nowrap;
+    margin-left: 50px;
+}
+
+.bottom img {
+    position: relative;
+    left: -5px;
+    top: 2px;
+}
+
+.bottom img:hover {
+    transform: scale(1.1);
+}
+
+.line {
+    width: 1.50px;
+    height: 20px;
+    margin: 0 10px 0 10px;
+    /*background-color: #666666;*/
+}
+
+.selectors {
+    display: inline-flex;
+    float: right;
+    margin: 5px;
+    color: #0c961f !important;
+}
+
+.selectors .fa-angle-left:hover {
+    transform: scale(1.1);
+}
+.selectors .fa-angle-right:hover {
+    transform: scale(1.1);
+}
+
+.total {
+    width: 400px;
+    height: 40px;
+    padding: 7px 0 0 20px;
+    margin-left: 5px;
+    background-color: #e6e4e6;
+    text-transform: uppercase;
+    color: #2c2b2c;
+}
+
+.icon-cart {
+    position: absolute;
+    top: 0;
+    right: 2px;
+    background-color: rgba(0, 0, 0, 0.616);
+    width: 50px;
+    height: 40px;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    padding: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.397)
+}
+
+.left-colum {
+    float: left;
+    width: 100px;
+    height: 90%;
+    margin-right: 10px;
+    padding-top: 20px;
+}
+
+
+.left-colum .submenu-item {
+    width: 60%;
+    float: right;
+    margin-bottom: 7px;
+    box-sizing: border-box;
+}
+
+.left-colum .submenu-item:hover {
+    transform: scale(1.1);
+}
+
+.left-colum .submenu-item .icon-submenu {
+    position: relative;
+    top: 4px;
+    left: 5px;
+    padding-right: 2px;
+    padding-left: 2px;
+    width: 35px;
+    height: 35px;
+    background-size: cover;
+}
+
+.left-colum .submenu-item .icon-submenu img {
+    width: 30px;
+    height: 30px;
+    float: right;
+    margin-left: 9px;
+}
+/*.subActive {
+    background-color: #666666 !important;
+}*/
+
+.right-colum {
+    float: right;
+    width: 580px;
+    height: 90%;
+    background-color: rgba(255, 255, 255, 0.444);
+    border: 1px solid rgba(210, 206, 206, 0.497);
+}
+
+.right-colum header {
+    width: 100%;
+    height: 50px;
+    color: #fff;
+    text-shadow: 1px 1px 3px #000;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.right-colum footer {
+    width: 90%;
+    height: 83%;
+    margin: .5% auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    overflow: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.right-colum footer .item-clothe {
+    position: relative;
+    display: flex;
+    margin: 0px 5px 10px;
+    height: 120px;
+    width: 120px;
+    transition: .2s;
+}
+
+.right-colum footer .item-clothe .img-clothe {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-size: auto;
+    background-position: center;
+}
+
+.right-colum footer .item-clothe .img-clothe .overlay {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 0;
+    text-align: center;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.2);
+    font-size: 16px;
+}
+
+.right-colum footer .item-clothe:hover {
+    transform: scale(1.1);
+    z-index: 999999999999;
+}
+
+.actions {
+    position: fixed;
+    display: flex;
+    bottom: 10%;
+    left: 215px;
+    width: 300px;
+    align-items: center;
+    justify-content: left;
+    outline: none;
+}
+
+.actions button {
+    border: 0;
+    color: #fff;
+    height: 50px;
+    font-size: 20px;
+    width: 80px;
+    text-align: center;
+    background: transparent;
+}
+
+.actions img {
+    height: 50px;
+    width: 50px;
+}
+
+/*.actions> :first-child {
+    border-right: 1px solid #666666;
+}
+
+.actions> :last-child {
+    border-left: 1px solid #666666;
+}*/
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 1px;
+    border-radius: .2rem;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(210, 206, 206, 0.397);
+}
+
+ ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: #d2d0d0;
+    border: 1px solid #aaa;
+    border-radius: .2rem;
+}
+
+ ::-webkit-scrollbar-thumb:hover {
+    background: rgb(141, 138, 138);
+}
+
+ ::-webkit-scrollbar-thumb:active {
+    background: linear-gradient(left, #22ADD4, #1E98BA);
+}
+
+@media only screen and (max-width: 1366px) { /* 1366x768 */
+    .loja-de-roupa {
+        zoom: 0.9;
+        margin-top: -3%;
+    }
+    .container {
+        top: 11%;
+    }
+}
+
+@media only screen and (max-width: 1024px) { /* 1024x768 */
+    .loja-de-roupa {
+        zoom: 0.9;
+        margin-top: -3%;
+    }
+    .container {
+        top: 11%;
+    }
+}
+
+.dropdown:focus, button:focus{
+    outline: none;
+}
+#leftHeading:hover{
+    transform: scale(1.1);
+}
+#handsUp:hover{
+    transform: scale(1.1);
+}
+#rightHeading:hover{
+    transform: scale(1.1);
+}
+#payament:hover{
+    transform: scale(1.1);
+
+}
+body{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+@media only screen and (min-height: 600px) { 
+    .actions {
+        position: fixed;
+        display: flex;
+        bottom: -5%;
+        left: 215px;
+        width: 300px;
+        align-items: center;
+        justify-content: left;
+        outline: none;
+    }
+    
+.container {
+    position: absolute;
+    left: 1%;
+    top: 1%;
+    width: 600px;
+    height: 700px;
+    display: inline-flex;
+}
+}
+@media only screen and (min-height: 840px) { 
+    .actions {
+        position: fixed;
+        display: flex;
+        bottom: -40px;
+        left: 215px;
+        width: 300px;
+        align-items: center;
+        justify-content: left;
+        outline: none;
+    }
+    .container {
+        position: absolute;
+        left: 1%;
+        top: 7%;
+        width: 600px;
+        height: 700px;
+        display: inline-flex;
+    }
+}@media only screen and (min-height: 900px) { 
+    .actions {
+        position: fixed;
+        display: flex;
+        bottom: -5%;
+        left: 215px;
+        width: 300px;
+        align-items: center;
+        justify-content: left;
+        outline: none;
+    }
+}

@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>VRP_ROUPAS</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="loja-de-roupa" style="display: none;">
+        <div class="container">
+            <div class="left-colum">
+                <div class="submenu-item subActive" onclick="selectPart(this)" data-idpart="mascara">
+                    <div class="icon-submenu">
+                        <img src="https://image.flaticon.com/icons/svg/3090/3090739.svg">
+                    </div>
+                </div>
+                <div class="submenu-item" onclick="selectPart(this)" data-idpart="mao">
+                    <div class="icon-submenu">
+                        <img src="https://image.flaticon.com/icons/svg/3099/3099943.svg">
+                    </div>
+                </div>
+                <div class="submenu-item" onclick="selectPart(this)" data-idpart="relogio">
+                    <div class="icon-submenu">
+                        <img src="https://image.flaticon.com/icons/svg/3105/3105666.svg">
+                    </div>
+                </div>
+                <div class="submenu-item" onclick="selectPart(this)" data-idpart="bracelete">
+                    <div class="icon-submenu">
+                        <img src="https://image.flaticon.com/icons/svg/2950/2950661.svg">
+                    </div>
+                </div>
+                <div class="submenu-item" onclick="selectPart(this)" data-idpart="bone">
+                    <div class="icon-submenu">
+                        <img src="https://image.flaticon.com/icons/svg/972/972464.svg">
+                    </div>
+                </div>
+                <div class="submenu-item" onclick="selectPart(this)" data-idpart="oculos">
+                    <div class="icon-submenu">
+                        <img src="https://image.flaticon.com/icons/svg/3084/3084331.svg">
+                    </div>
+                </div>
+                <div class="submenu-item" onclick="selectPart(this)" data-idpart="brinco">
+                    <div class="icon-submenu">
+                        <img src="https://image.flaticon.com/icons/svg/3022/3022445.svg">
+                    </div>
+                </div>
+                <div class="submenu-item" onclick="selectPart(this)" data-idpart="gravata">
+                    <div class="icon-submenu">
+                        <img src="https://image.flaticon.com/icons/svg/687/687246.svg">
+                    </div>
+                </div>
+                <div class="submenu-item" onclick="selectPart(this)" data-idpart="camisa">
+                    <div class="icon-submenu">
+                        <img src="https://image.flaticon.com/icons/svg/3076/3076280.svg">
+                    </div>
+                </div>
+                <div class="submenu-item" onclick="selectPart(this)" data-idpart="jaqueta">
+                    <div class="icon-submenu">
+                        <img src="https://image.flaticon.com/icons/svg/3067/3067081.svg">
+                    </div>
+                </div>
+                <div class="submenu-item" onclick="selectPart(this)" data-idpart="calca">
+                    <div class="icon-submenu">
+                        <img src="https://image.flaticon.com/icons/svg/1855/1855944.svg">
+                    </div>
+                </div>
+                <div class="submenu-item" onclick="selectPart(this)" data-idpart="mochila">
+                    <div class="icon-submenu">
+                        <img src="https://image.flaticon.com/icons/svg/2907/2907238.svg">
+                    </div>
+                </div>
+                <div class="submenu-item" onclick="selectPart(this)" data-idpart="sapato">
+                    <div class="icon-submenu">
+                        <img src="https://image.flaticon.com/icons/svg/2936/2936867.svg">
+                    </div>
+                </div>
+            </div>
+
+            <div class="right-colum">
+                <header>
+                    <h1>Mascaras</h1>
+                </header>
+                <footer>
+                    
+                </footer>
+                <div class="bottom">
+                    <div class="color">
+                        <img class="fas fa-palette" src="https://cdn.discordapp.com/attachments/746851286422519928/746852297174155284/Sem_Titulo-1.png" style="width: 22px; height: 22px; position: relative; left: 1px; top: 7px;">
+                        <div class="selectors">
+                            <img class="fas fa-angle-left" src="https://cdn.discordapp.com/attachments/746851286422519928/746851356626780160/esquerda.png" style="width: 20px; height: 22px; position: relative; left: 1px;">
+                            <div class="line"></div>
+                            <img class="fas fa-angle-right" src="https://cdn.discordapp.com/attachments/746851286422519928/746851352751112272/direita.png" style="width: 20px; height: 22px; position: relative; left: 1px;">
+                        </div>
+                    </div>
+                    <div class="total">
+                        <span>Total</span>
+                        <strong style="float: right;color: #0c961f;padding-right: 20px;">R$ <span id="total">0</span></strong>
+                    </div>
+                    <div class="addCartbutton">
+                        <img id="payament" src="https://cdn.discordapp.com/attachments/746851286422519928/746851875982409738/Sem_Titulo-2.png"  style="height:36; width:36px; margin-left:10px; ">
+                    </div>
+                </div>
+
+            </div>
+            <div class="actions">
+                <button id="leftHeading"><img src="https://cdn.discordapp.com/attachments/746851286422519928/746851357872619520/esquerda2.png"></button>
+                <button id="handsUp"><img src="https://cdn.discordapp.com/attachments/746851286422519928/746851358967070761/mao.png"></button>
+                <button id="rightHeading"><img src="https://cdn.discordapp.com/attachments/746851286422519928/746851355368358060/direita2.png"></button>
+            </div>
+        </div>
+    </div>
+    <script src="ui.js"></script>
+    <script>
+    </script>
+</body>
+
+</html>

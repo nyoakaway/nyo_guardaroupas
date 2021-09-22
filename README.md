@@ -22,9 +22,3 @@ Caso Server:
 TriggerClientEvent("guardaroupa:abrir", source, x, y, z, x2, y2, z2)
 ```
 Nesta caso (que é usado pelo vrp_homes) basta passar as variáveis de x,y e z todas como 1
-
-
-**Duvidas/Suporte:**
-
-https://discord.gg/nyo
-
